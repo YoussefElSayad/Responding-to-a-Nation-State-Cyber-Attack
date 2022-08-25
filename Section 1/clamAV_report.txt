@@ -1,0 +1,38 @@
+Performed the command "clamscan --verbose /home/ubuntu/Downloads/"
+
+Detected 3 infected files:
+	1- ft32
+	2- ft64
+	3- wipefs
+
+File "SSH-One" is also suspicious.
+
+Output:
+=========================================================================
+Scanning /home/ubuntu/Downloads/moni.lod
+/home/ubuntu/Downloads/moni.lod: OK
+Scanning /home/ubuntu/Downloads/notes.txt
+/home/ubuntu/Downloads/notes.txt: OK
+Scanning /home/ubuntu/Downloads/SSH-One
+/home/ubuntu/Downloads/SSH-One: OK
+Scanning /home/ubuntu/Downloads/gates.lod
+/home/ubuntu/Downloads/gates.lod: OK
+Scanning /home/ubuntu/Downloads/ft32
+/home/ubuntu/Downloads/ft32: Unix.Malware.Agent-6774375-0 FOUND
+Scanning /home/ubuntu/Downloads/ft64
+/home/ubuntu/Downloads/ft64: Unix.Malware.Agent-6774336-0 FOUND
+Scanning /home/ubuntu/Downloads/wipefs
+/home/ubuntu/Downloads/wipefs: Unix.Tool.Miner-6443173-0 FOUND
+Scanning /home/ubuntu/Downloads/tmplog
+/home/ubuntu/Downloads/tmplog: OK
+
+----------- SCAN SUMMARY -----------
+Known viruses: 8874078
+Engine version: 0.100.3
+Scanned directories: 1
+Scanned files: 8
+Infected files: 3
+Data scanned: 2.42 MB
+Data read: 2.40 MB (ratio 1.01:1)
+Time: 34.749 sec (0 m 34 s)
+=========================================================================

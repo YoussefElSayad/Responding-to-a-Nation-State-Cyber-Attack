@@ -1,0 +1,32 @@
+Script flushes the iptables list, then proceeds to ensure that iptables are turned off
+
+Script changes /etc/rc.local script to add commands to the script file. The rc.local script is a
+superuser startup script.
+
+The script removes all files named SSH-T in the /tmp/ folder.
+
+Script runs a while loop that checks every 10 seconds, if the last remove command is not executed
+correctly, it proceeds to list all files with the value of the $m, which is set earlier to be equal
+to SSH-T. If the command is successful, the script sleep for 10 seconds, if it is unsuccessful it
+proceeds to change directory to the /tmp/ folder, then fetches the website that is set to be the value
+inside $hfs_m, then changes the permissions for the downloaded SSH-T file to be executable by all groups
+and users, and finally proceeds to execute the SSH-T file that was downloaded.
+
+Afterwards, the script does the same for the SSH-One script.
+
+=============================================
+Summary
+=============================================
+
+Overall, the script first disables the iptable rules by flushing them and stopping the service.
+Afterwards it stores some valuables then deletes all instances in the /tmp/ folder of the value stored
+in the variable m (which is equal to SSH-T).
+The script then searches the processes with the name SSH-T and if it is not available, it proceeds
+to fetch a website to download the file, and changes the permissions of the downloaded scripts and
+executes it. When this is done, the script afterwards does the same for the SSH-One script.
+
+The links the script opens are:
+	1- http://darkl0rd.com:7758/SSH-T
+	2- http://darkl0rd.com:7758/SSH-One
+
+=============================================

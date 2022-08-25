@@ -1,0 +1,12 @@
+SSH:
+	*vim /etc/ssh/sshd_config
+	change port number
+	change PermitRootLogin to no, MaxAuthTries to 3 and change/add the AllowUsers field to only the users using the protocol
+	set PasswordAuthentication to no and ClientAliveCountMax to 300
+	save the file and quit using :wq
+	*systemctl restart sshd
+
+Improving password policy:
+	passwords should contain at least 12 characters
+	passwords should include at least one lowercase letter, one uppercase letter, one number and one symbol
+	passwords expire after 30 days of use

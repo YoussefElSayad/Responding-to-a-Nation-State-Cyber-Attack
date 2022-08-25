@@ -1,0 +1,8 @@
+root@ubuntu-VirtualBox:/etc/apache2# export APACHE_RUN_USER=apache-user
+root@ubuntu-VirtualBox:/etc/apache2# export APACHE_RUN_GROUP=apache-group
+
+we can also do the following command:
+
+root@ubuntu-VirtualBox:/etc/apache2#gedit envvars
+
+and edit the APACHE_RUN_USER and APACHE_RUN_GROUP to be apache-user and apache-group respectively.

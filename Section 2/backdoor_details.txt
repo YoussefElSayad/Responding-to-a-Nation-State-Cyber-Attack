@@ -1,0 +1,11 @@
+username: darklord
+	this was shown in logs that the root user created a group labelled darklord, and afterwards 
+	created a user called darklord with root permissions.
+
+port: 53626 and 56565 are not standard ports, however 56565 is sometimes used as a trojan port
+
+process: tmp/remotesec -k -l 56565
+
+to kill:
+	root@ubuntu-VirtualBox:/home/ubuntu# userdel darklord
+	root@ubuntu-VirtualBox:/home/ubuntu# kill 963
